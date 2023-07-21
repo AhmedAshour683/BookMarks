@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+    <h1 class="text-center mt-5">BookMarker</h1>
+
+    <div class="mt-5 container head mb-5">
+
+        <div class="d-flex justify-content-center pt-5">
+        <i class="fa-solid fa-bookmark fa-lg" style="color: #1f5129;"></i>
+        <h2 class="text-center">Bookmark your favorite sites</h2>
+        <i class="fa-solid fa-bookmark fa-lg" style="color: #c1c110;"></i>
+        </div>
+
+        <i class="fa-solid fa-book-bookmark" style="color: #000000;"></i>
+        <label for="siteName" class="fw-bold">Site Name</label>
+        <input id="siteName" type="text" class="form-control" placeholder="BookMark Name">
+
+        <i class="fa-solid fa-link" style="color: #000000;"></i>
+        <label for="siteUrl" class="fw-bold MT-4">Site URL </label>
+        <input type="text" id="siteUrl" class="form-control" placeholder="BookMark URL">
+
+        <button onclick="addRow()" class="btn btn-danger px-5 mt-5 m-auto d-block mb-5 ">Submit</button>
+
+    </div>
+
+    <table class="my-5 w-75 mx-auto table">
+        <thead class="text-center">
+            <th class="text-black fw-bold">Index</th>
+            <th class="text-black fw-bold">WebSite Name</th>
+            <th class="text-black fw-bold">Visit</th>
+            <th class="text-black fw-bold">Delete</th>
+            
+        </thead>
+
+
+        <tbody id="tbody" class="text-center">
+
+            
+        </tbody>
+    </table>
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mine.js"></script>
+</body>
+</html>
