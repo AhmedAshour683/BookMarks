@@ -36,7 +36,9 @@ if(regex.test(siteUrl.value))
         for( var b=0;b<container.length;b++){
 
             cycle=(JSON.parse(localStorage.getItem("webSites")))[b].theSiteUrl==oneSite.theSiteUrl 
+            if(cycle==true){
             break
+            }
             }   
             
     }
